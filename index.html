@@ -1,60 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meeti</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
     <header class="header contenedor">
-        <div class="header__logo">
-            <a href="index.html">
-                <img src="build/img/logo.png" alt="imagen logo">
-            </a>
-        </div>
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="build/img/logo.png" alt="imagen logo" />
+        </a>
+      </div>
 
-        <nav class="navegacion">
-            <a href="#" class="navegacion__enlace navegacion__enlace--crear">Crear Grupo</a>
-            <a href="#" class="navegacion__enlace">Iniciar Sesión</a>
-            <a href="#" class="navegacion__enlace">Registrarse</a>
-        </nav>
+      <nav class="navegacion">
+        <a href="#" class="navegacion__enlace navegacion__enlace--crear"
+          >Crear Grupo</a
+        >
+        <a href="#" class="navegacion__enlace">Iniciar Sesión</a>
+        <a href="#" class="navegacion__enlace">Registrarse</a>
+      </nav>
     </header>
 
     <section class="hero">
-        <h1 class="hero__texto">Encuentra o crea un grupo para compartir lo que más te gusta</h1>
-        <a href="#" class="hero__enlace">Obtener una cuenta</a>
+      <h1 class="hero__texto">
+        Encuentra o crea un grupo para compartir lo que más te gusta
+      </h1>
+      <a href="#" class="hero__enlace">Obtener una cuenta</a>
     </section>
 
     <section class="busqueda">
-        <h2 class="busqueda__heading">
-            Busca un grupo en tu ciudad
-        </h2>
+      <h2 class="busqueda__heading">Busca un grupo en tu ciudad</h2>
 
-        <div class="contenedor">
-            <form class="formulario">
-                <select class="formulario__campo">
-                    <option value="" disabled selected>Seleccione</option>
-                    <option value="">Programación</option>
-                    <option value="">Diseño</option>
-                    <option value="">Negocios</option>
-                    <option value="">Moda</option>
-                    <option value="">Ejercicio y Salud</option>
-                    <option value="">Fotografía</option>
-                    <option value="">Comida</option>
-                    <option value="">Diseño interior</option>
-                    <option value="">Café</option>
-                    <option value="">Cine</option>
-                    <option value="">Libros</option>
-                    <option value="">Emprendimiento</option>
-                </select>
-                <input type="text" class="formulario__campo" placeholder="Nombre del Evento">
-                <input type="text" class="formulario__campo" placeholder="Ciudad o País">
-                <input type="submit" class="formulario__submit" value="Buscar">
-            </form>
-        </div>
+      <div class="contenedor">
+        <form class="formulario">
+          <select class="formulario__campo">
+            <option value="" disabled selected>Seleccione</option>
+            <option value="">Programación</option>
+            <option value="">Diseño</option>
+            <option value="">Negocios</option>
+            <option value="">Moda</option>
+            <option value="">Ejercicio y Salud</option>
+            <option value="">Fotografía</option>
+            <option value="">Comida</option>
+            <option value="">Diseño interior</option>
+            <option value="">Café</option>
+            <option value="">Cine</option>
+            <option value="">Libros</option>
+            <option value="">Emprendimiento</option>
+          </select>
+          <input
+            type="text"
+            class="formulario__campo"
+            placeholder="Nombre del Evento"
+          />
+          <input
+            type="text"
+            class="formulario__campo"
+            placeholder="Ciudad o País"
+          />
+          <input type="submit" class="formulario__submit" value="Buscar" />
+        </form>
+      </div>
     </section>
-</body>
+
+    <main class="eventos contenedor">
+      <h2 class="eventos__heading">Proximos Eventos</h2>
+      <div class="eventos__grid">
+        <div class="evento">
+          <a href="meeti.html">
+            <img
+              class="evento__imagen"
+              src="build/img/imagen1.jpg"
+              alt="imagen meeti"
+            />
+
+            <div class="evento__contenido">
+              <p class="evento__fecha">Jueves 30 de Septiembre de 2022</p>
+
+              <h3 class="evento__nombre">Ideas de Negocios</h3>
+
+              <div class="evento__autor">
+                <div class="evento__autor-imagen">
+                  <img src="build/img/perfil1.jpg" alt="imagen perfil" />
+                </div>
+                <div class="evento__autor-informacion">
+                  <p class="evento__organicado-texto">Organizado por:</p>
+                  <p class="evento__organicado-nombre">Martin March</p>
+                </div>
+              </div>
+            </div>
+            <!--Evento contenido-->
+          </a>
+        </div>
+        <!--Evento-->
+
+        <div class="evento">
+          <a href="meeti.html">
+            <img
+              class="evento__imagen"
+              src="build/img/imagen2.jpg"
+              alt="imagen meeti"
+            />
+
+            <div class="evento__contenido">
+              <p class="evento__fecha">Lunes 02 de Octubre de 2022</p>
+
+              <h3 class="evento__nombre">Bitcoins y otras Criptos</h3>
+
+              <div class="evento__autor">
+                <div class="evento__autor-imagen">
+                  <img src="build/img/perfil1.jpg" alt="imagen perfil" />
+                </div>
+                <div class="evento__autor-informacion">
+                  <p class="evento__organicado-texto">Organizado por:</p>
+                  <p class="evento__organicado-nombre">Martin March</p>
+                </div>
+              </div>
+            </div>
+            <!--Evento contenido-->
+          </a>
+        </div>
+        <!--Evento-->
+
+        <div class="evento">
+          <a href="meeti.html">
+            <img
+              class="evento__imagen"
+              src="build/img/imagen3.jpg"
+              alt="imagen meeti"
+            />
+
+            <div class="evento__contenido">
+              <p class="evento__fecha">Miercoles 04 de Octubre de 2022</p>
+
+              <h3 class="evento__nombre">Pizza paso a paso</h3>
+
+              <div class="evento__autor">
+                <div class="evento__autor-imagen">
+                  <img src="build/img/perfil2.jpg" alt="imagen perfil" />
+                </div>
+                <div class="evento__autor-informacion">
+                  <p class="evento__organicado-texto">Organizado por:</p>
+                  <p class="evento__organicado-nombre">Jose Perez</p>
+                </div>
+              </div>
+            </div>
+            <!--Evento contenido-->
+          </a>
+        </div>
+        <!--Evento-->
+      </div>
+    </main>
+  </body>
 </html>
